@@ -1,6 +1,6 @@
 # Basic Statistics
 
-Basic Statistics is a Java-based implementation for computing statistics on a
+Basic Statistics is a Java-based GUI program that computes statistics on a
 set of numbers.
 This implementation is intended to be used in a `git bisect` exercise.
 
