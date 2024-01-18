@@ -16,7 +16,9 @@ public class BasicStats {
     return sum / numbers.length;
   }
 
+  /** Compute the median of an array of numbers. */
   public static double median(double... numbers) {}
 
+  /** Compute the mode of an array of numbers. */
   public static double mode(double... numbers) {}
 }
