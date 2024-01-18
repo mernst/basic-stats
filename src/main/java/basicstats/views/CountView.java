@@ -1,4 +1,4 @@
-package basicstats;
+package basicstats.views;
 
 import java.util.ArrayList;
 import javax.swing.JTextField;

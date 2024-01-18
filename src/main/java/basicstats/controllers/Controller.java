@@ -1,4 +1,6 @@
-package basicstats;
+package basicstats.controllers;
+
+import basicstats.models.Model;
 
 // Controller interface
 public interface Controller {

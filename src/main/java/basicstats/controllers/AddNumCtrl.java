@@ -1,13 +1,14 @@
-package basicstats;
+package basicstats.controllers;
 
+import basicstats.models.Model;
 import java.util.ArrayList;
 
-// Controller for ResetView
-public class ResetCtrl implements Controller {
+// Controller for AddNumView
+public class AddNumCtrl implements Controller {
 
   ArrayList<Model> models;
 
-  public ResetCtrl() {
+  public AddNumCtrl() {
     models = new ArrayList<Model>();
   }
 
@@ -16,9 +17,9 @@ public class ResetCtrl implements Controller {
   }
 
   public void updateModels(Double num) {
-    // New ArrayList resets model in Numbers.java
+
     for (Model model : models) {
-      model.update(new ArrayList<Double>());
+      model.addData(num);
     }
   }
 }

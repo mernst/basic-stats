@@ -1,5 +1,6 @@
-package basicstats;
+package basicstats.views;
 
+import basicstats.controllers.Controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;

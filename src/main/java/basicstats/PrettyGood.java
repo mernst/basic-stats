@@ -1,5 +1,16 @@
 package basicstats;
 
+import basicstats.controllers.AddNumCtrl;
+import basicstats.controllers.ResetCtrl;
+import basicstats.models.Numbers;
+import basicstats.views.AddNumView;
+import basicstats.views.CountView;
+import basicstats.views.MeanView;
+import basicstats.views.MedianView;
+import basicstats.views.ModeView;
+import basicstats.views.NumbersView;
+import basicstats.views.ResetView;
+import basicstats.views.View;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;

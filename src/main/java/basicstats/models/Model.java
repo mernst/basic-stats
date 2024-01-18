@@ -1,5 +1,6 @@
-package basicstats;
+package basicstats.models;
 
+import basicstats.views.View;
 import java.util.ArrayList;
 
 public interface Model {

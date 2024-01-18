@@ -1,5 +1,6 @@
-package basicstats;
+package basicstats.views;
 
+import basicstats.BasicStats;
 import java.util.ArrayList;
 import javax.swing.JTextField;
 import javax.swing.text.JTextComponent;
