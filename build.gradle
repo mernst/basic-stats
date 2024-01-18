@@ -15,12 +15,10 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
-
 application {
     version = '1.0.1'
     mainClass = "basicstats.BasicStats"
 }
-
 
 test {
     useJUnitPlatform()
