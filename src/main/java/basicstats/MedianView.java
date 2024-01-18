@@ -1,7 +1,6 @@
 package basicstats;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import javax.swing.JTextField;
 import javax.swing.text.JTextComponent;
 
@@ -19,16 +18,8 @@ public class MedianView implements View {
   }
 
   @Override
-  public void update(ArrayList<Integer> numbers) {
-    Collections.sort(numbers);
-
-    int count = numbers.size();
-
-    if (count % 2 == 0) {
-      median = (numbers.get(count >> 1) + numbers.get((count >> 1) - 1)) / 2.;
-    } else {
-      median = numbers.get(count >> 1);
-    }
+  public void update(ArrayList<Double> numbers) {
+    median = BasicStats.median(BasicStats.getArrayDouble(numbers));
 
     // Set text
     jtfMedian.setText("" + median);

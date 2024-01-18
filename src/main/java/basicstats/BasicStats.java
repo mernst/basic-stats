@@ -1,5 +1,7 @@
 package basicstats;
 
+import java.util.ArrayList;
+
 /** A simple class to compute basic, descriptive statistics. */
 public class BasicStats {
 
@@ -73,5 +75,15 @@ public class BasicStats {
         }
       }
     }
+  }
+
+  public static double[] getArrayDouble(ArrayList<Double> doubles) {
+    double[] result = new double[doubles.size()];
+
+    for (int i = 0; i < doubles.size(); i++) {
+      result[i] = doubles.get(i);
+    }
+
+    return result;
   }
 }

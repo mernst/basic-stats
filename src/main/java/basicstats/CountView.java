@@ -19,7 +19,7 @@ public class CountView implements View {
   }
 
   @Override
-  public void update(ArrayList<Integer> numbers) {
+  public void update(ArrayList<Double> numbers) {
     count = numbers.size();
 
     jtfCount.setText("" + count);

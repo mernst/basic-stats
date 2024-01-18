@@ -9,10 +9,10 @@ public interface Model {
   public void updateViews();
 
   // Taking an ArrayList allows for data to be read in from this kind of data structure
-  public void update(ArrayList<Integer> information);
+  public void update(ArrayList<Double> information);
 
   // addData allows for single data point to be added from any source
-  public void addData(Integer data);
+  public void addData(Double data);
 
-  public ArrayList<Integer> getData();
+  public ArrayList<Double> getData();
 }
