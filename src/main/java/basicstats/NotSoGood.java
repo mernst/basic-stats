@@ -32,12 +32,17 @@ public class NotSoGood {
     jtfMedian.setEditable(false);
     JTextField jtfMean = new JTextField(5);
     jtfMean.setEditable(false);
+    JTextField jtfMode = new JTextField(5);
+    jtfMode.setEditable(false);
+
     jpStats.add(new JLabel("Numbers:"));
     jpStats.add(jtfCount);
     jpStats.add(new JLabel("Median:"));
     jpStats.add(jtfMedian);
     jpStats.add(new JLabel("Mean:"));
     jpStats.add(jtfMean);
+    jpStats.add(new JLabel("Mode:"));
+    jpStats.add(jtfMode);
     jfMain.getContentPane().add(jpStats, BorderLayout.CENTER);
 
     // TextArea that shows all the numbers
@@ -59,6 +64,7 @@ public class NotSoGood {
             jtfCount.setText("");
             jtfMedian.setText("");
             jtfMean.setText("");
+            jtfMode.setText("");
           }
         });
     JTextField jtfNumber = new JTextField(5);
@@ -83,6 +89,10 @@ public class NotSoGood {
             // Compute and set the median
             double median = BasicStats.median(getArrayDouble(data));
             jtfMedian.setText("" + median);
+
+            // Compute and set the mode
+            double mode = BasicStats.mode(getArrayDouble(data));
+            jtfMode.setText("" + mode);
           }
         });
     JPanel jpInput = new JPanel(new FlowLayout(FlowLayout.CENTER));
