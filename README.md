@@ -21,7 +21,7 @@ For Windows, use `gradlew.bat` instead of `./gradlew`.
 
 2. Run `./gradlew compile` to compile Basic Statistics.
 
-4. Run `./gradlew test` to run unit tests.
+4. Run `./gradlew build` to compile and run tests.
 
 5. Run `./gradlew clean` whenever you want to clean up the project (i.e., delete all generated files).
 
