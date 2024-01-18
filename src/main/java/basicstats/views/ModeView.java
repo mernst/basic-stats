@@ -20,15 +20,6 @@ public class ModeView implements View {
   }
 
   @Override
-  public String getName() {
-    return name;
-  }
-
-  public double getMode() {
-    return mode;
-  }
-
-  @Override
   public void update(ArrayList<Double> numbers) {
     mode = BasicStats.mode(BasicStats.getArrayDouble(numbers));
 
@@ -44,5 +35,14 @@ public class ModeView implements View {
   @Override
   public JTextComponent show() {
     return jtfMode;
+  }
+
+  @Override
+  public String getName() {
+    return name;
+  }
+
+  public double getMode() {
+    return mode;
   }
 }
