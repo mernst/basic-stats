@@ -24,6 +24,8 @@ For Windows, use `gradlew.bat` instead of `./gradlew`.
 4. Run `./gradlew build` to compile and run tests.
 
 5. Run `./gradlew clean` whenever you want to clean up the project (i.e., delete all generated files).
+You need to do this to re-run the tests, if they have already been run after the most recent code change.
+For example: `./gradlew clean build`.
 
 #### Program features:
 * Displays (at the bottom of the screen) a set of entered numbers.
