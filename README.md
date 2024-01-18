@@ -1,11 +1,13 @@
 # Basic Statistics
 
-Basic Statistics is a Java-based implementation for computing statistics on a set of numbers.
+Basic Statistics is a Java-based implementation for computing statistics on a
+set of numbers.
 This implementation is intended to be used in a `git bisect` exercise.
 
 #### How to run Basic Statistics from the terminal:
 
-Run this command from the Basic Statistics root directory, which contains the *build.gradle* build file.
+Run this command from the Basic Statistics root directory, which contains the
+*build.gradle* build file.
 
 1. `./gradlew run`
 
