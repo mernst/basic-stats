@@ -34,6 +34,14 @@ public class ResetView implements View {
         });
   }
 
+  public void addController(Controller ctrl) {
+    controllers.add(ctrl);
+  }
+
+  public JButton getButton() {
+    return jbReset;
+  }
+
   @Override
   public void update(ArrayList<Double> numbers) {}
 
@@ -48,13 +56,5 @@ public class ResetView implements View {
   @Override
   public String getName() {
     return "Reset View";
-  }
-
-  public void addController(Controller ctrl) {
-    controllers.add(ctrl);
-  }
-
-  public JButton getButton() {
-    return jbReset;
   }
 }
