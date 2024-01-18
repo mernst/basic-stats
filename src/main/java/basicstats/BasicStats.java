@@ -14,7 +14,10 @@ import basicstats.views.View;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.util.ArrayList;
-import javax.swing.*;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.WindowConstants;
 
 /** A simple class to compute basic, descriptive statistics. */
 public class BasicStats {
