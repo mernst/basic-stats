@@ -16,7 +16,6 @@ public class ResetCtrl implements Controller {
   }
 
   public void updateModels(Double num) {
-
     // New ArrayList resets model in Numbers.java
     for (Model model : models) {
       model.update(new ArrayList<Double>());
