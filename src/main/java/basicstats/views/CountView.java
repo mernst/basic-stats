@@ -36,6 +36,7 @@ public class CountView implements View {
     return jtfCount;
   }
 
+  @Override
   public String getName() {
     return name;
   }

@@ -19,6 +19,7 @@ public class ModeView implements View {
     name = "Mode";
   }
 
+  @Override
   public String getName() {
     return name;
   }

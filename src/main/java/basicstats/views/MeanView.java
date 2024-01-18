@@ -24,6 +24,7 @@ public class MeanView implements View {
     return jtfMean;
   }
 
+  @Override
   public String getName() {
     return name;
   }

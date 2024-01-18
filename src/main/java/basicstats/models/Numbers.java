@@ -15,16 +15,30 @@ public class Numbers implements Model {
     observers = new ArrayList<View>();
   }
 
+  @Override
+  public void update(ArrayList<Double> information) {
+    if (information.size() == 0) {
+      numbers = information;
+    } else {
+      numbers.addAll(information);
+    }
+
+    updateViews();
+  }
+
+  @Override
   public ArrayList<Double> getData() {
     return numbers;
   }
 
+  @Override
   public void addData(Double num) {
     numbers.add(num);
 
     updateViews();
   }
 
+  @Override
   public void updateViews() {
 
     for (View view : observers) {
@@ -36,18 +50,8 @@ public class Numbers implements Model {
     }
   }
 
+  @Override
   public void addObserver(View view) {
     observers.add(view);
-  }
-
-  @Override
-  public void update(ArrayList<Double> information) {
-    if (information.size() == 0) {
-      numbers = information;
-    } else {
-      numbers.addAll(information);
-    }
-
-    updateViews();
   }
 }
