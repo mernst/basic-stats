@@ -1,5 +1,7 @@
 package basicstats;
 
+import java.util.Arrays;
+
 /** A simple class to compute basic, descriptive statistics. */
 public class BasicStats {
 
@@ -17,7 +19,22 @@ public class BasicStats {
   }
 
   /** Compute the median of an array of numbers. */
-  public static double median(double... numbers) {}
+  public static double median(double... numbers) {
+    Arrays.sort(numbers);
+
+    int size = numbers.length;
+    double median = 0.0;
+
+    if (size > 0) {
+      if (size % 2 == 0) {
+        median = (numbers[size >> 1] + numbers[(size >> 1) - 1]) / 2;
+      } else {
+        median = numbers[size >> 1];
+      }
+    }
+
+    return median;
+  }
 
   /** Compute the mode of an array of numbers. */
   public static double mode(double... numbers) {}
