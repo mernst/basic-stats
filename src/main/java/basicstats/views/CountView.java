@@ -18,6 +18,14 @@ public class CountView implements View {
     name = "Numbers";
   }
 
+  public String getName() {
+    return name;
+  }
+
+  public int getCount() {
+    return count;
+  }
+
   @Override
   public void update(ArrayList<Double> numbers) {
     count = numbers.size();
@@ -33,13 +41,5 @@ public class CountView implements View {
   @Override
   public JTextComponent show() {
     return jtfCount;
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public int getCount() {
-    return count;
   }
 }
