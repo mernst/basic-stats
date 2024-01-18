@@ -15,4 +15,8 @@ public class BasicStats {
     }
     return sum / numbers.length;
   }
+
+  public static double median(double... numbers) {}
+
+  public static double mode(double... numbers) {}
 }
