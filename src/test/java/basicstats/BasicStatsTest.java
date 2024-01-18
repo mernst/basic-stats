@@ -40,7 +40,6 @@ public class BasicStatsTest {
   @Test
   public void testMedian() {
     // Median should be 8.0 since size is even
-    /* double[] numbers = {1, 4, 7, 9, 11, 21}; */
     double[] numbers = {9, 11, 1, 4, 7, 21};
 
     double median = BasicStats.median(numbers);
