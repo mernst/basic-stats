@@ -13,7 +13,6 @@ import basicstats.views.ResetView;
 import basicstats.views.View;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
-import java.awt.event.*;
 import java.util.ArrayList;
 import javax.swing.*;
 
