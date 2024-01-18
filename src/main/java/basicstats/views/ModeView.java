@@ -7,6 +7,7 @@ import javax.swing.text.JTextComponent;
 
 public class ModeView implements View {
 
+  // Instance variables
   double mode;
   JTextField jtfMode;
   String name;

@@ -7,6 +7,7 @@ import javax.swing.text.JTextComponent;
 
 public class MeanView implements View {
 
+  // Instance variables
   double mean;
   JTextField jtfMean;
   String name;

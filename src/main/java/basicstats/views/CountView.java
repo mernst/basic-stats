@@ -7,6 +7,7 @@ import javax.swing.text.JTextComponent;
 // View for count of numbers
 public class CountView implements View {
 
+  // Instance variables
   int count;
   JTextField jtfCount;
   String name;
@@ -16,14 +17,6 @@ public class CountView implements View {
     jtfCount = new JTextField(5);
     jtfCount.setEditable(false);
     name = "Numbers";
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public int getCount() {
-    return count;
   }
 
   @Override
@@ -41,5 +34,13 @@ public class CountView implements View {
   @Override
   public JTextComponent show() {
     return jtfCount;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getCount() {
+    return count;
   }
 }

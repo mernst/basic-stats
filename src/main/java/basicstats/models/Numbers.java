@@ -6,16 +6,13 @@ import java.util.ArrayList;
 // Model for this assignment
 public class Numbers implements Model {
 
+  // Variables for Model
   ArrayList<Double> numbers;
   ArrayList<View> observers;
 
   public Numbers() {
     numbers = new ArrayList<Double>();
     observers = new ArrayList<View>();
-  }
-
-  public void addObserver(View view) {
-    observers.add(view);
   }
 
   @Override
@@ -48,5 +45,9 @@ public class Numbers implements Model {
         view.update(numbers);
       }
     }
+  }
+
+  public void addObserver(View view) {
+    observers.add(view);
   }
 }

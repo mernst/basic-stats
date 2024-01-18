@@ -14,6 +14,7 @@ import javax.swing.text.JTextComponent;
 
 public class ResetView implements View {
 
+  // Instance variables
   JButton jbReset;
   ArrayList<Controller> controllers;
 
