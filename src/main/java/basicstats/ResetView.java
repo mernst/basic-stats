@@ -33,26 +33,18 @@ public class ResetView implements View {
   }
 
   @Override
-  public void update(ArrayList<Double> numbers) {
-    // TODO Auto-generated method stub
-
-  }
+  public void update(ArrayList<Double> numbers) {}
 
   @Override
-  public void reset() {
-    // TODO Auto-generated method stub
-
-  }
+  public void reset() {}
 
   @Override
   public JTextComponent show() {
-    // TODO Auto-generated method stub
     return null;
   }
 
   @Override
   public String getName() {
-    // TODO Auto-generated method stub
     return "Reset View";
   }
 
