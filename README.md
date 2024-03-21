@@ -4,6 +4,7 @@ Basic Statistics is a Java-based GUI program that computes statistics on a
 set of numbers.
 This implementation is intended to be used in a `git bisect` exercise.
 
+
 #### How to run Basic Statistics from the terminal:
 
 Run this command from the Basic Statistics root directory, which contains the
@@ -14,6 +15,14 @@ Run this command from the Basic Statistics root directory, which contains the
 The application's GUI will show up.
 
 For Windows, use `gradlew.bat` instead of `./gradlew`.
+
+
+#### Program features:
+* Displays (at the bottom of the screen) a set of entered numbers.
+* Computes the mean of the set of numbers.
+* Computes the median of the set of numbers.
+* Computes the mode of the set of numbers.
+
 
 #### How to build Basic Statistics and run its tests from the terminal:
 
@@ -27,8 +36,3 @@ For Windows, use `gradlew.bat` instead of `./gradlew`.
 You need to do this to re-run the tests, if they have already been run after the most recent code change.
 For example: `./gradlew clean build`.
 
-#### Program features:
-* Displays (at the bottom of the screen) a set of entered numbers.
-* Computes the mean of the set of numbers.
-* Computes the median of the set of numbers.
-* Computes the mode of the set of numbers.
