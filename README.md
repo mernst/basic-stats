@@ -2,7 +2,7 @@
 
 Basic Statistics is a Java-based GUI program that computes statistics on a
 set of numbers.
-This implementation is intended to be used in a `git bisect` exercise.
+This implementation is intended to be used in a [`git bisect` exercise](ASSIGNMENT.md).
 
 
 #### How to run Basic Statistics from the terminal:
@@ -26,13 +26,13 @@ For Windows, use `gradlew.bat` instead of `./gradlew`.
 
 #### How to build Basic Statistics and run its tests from the terminal:
 
-1. Change into the Basic Statistics root directory, which contains the *build.gradle* build file.
+Run these commands from the Basic Statistics root directory, which contains the *build.gradle* build file.
 
-2. Run `./gradlew compile` to compile Basic Statistics.
+1. Run `./gradlew compile` to compile Basic Statistics.
 
-4. Run `./gradlew build` to compile and run tests.
+2. Run `./gradlew build` to compile and run tests.
 
-5. Run `./gradlew clean` whenever you want to clean up the project (i.e., delete all generated files).
+3. Run `./gradlew clean` whenever you want to clean up the project (i.e., delete all generated files).
 You need to do this to re-run the tests, if they have already been run after the most recent code change.
 For example: `./gradlew clean build`.
 
