@@ -30,9 +30,9 @@ single test run (they trusted the test command).
 
 ## Instructions
 
-3. **Checkout** the most recent commit on the *main* branch (`git checkout main`) and run: "`./gradlew clean build`".  The software is defective, but the command `./gradlew clean build` succeeds!  Figure out why.  Hint: run "`./gradlew clean build; echo $?" which prints the exit code of the *gradle* process.
+3. **Checkout** the most recent commit on the *main* branch (`git checkout main`) and run: "`./gradlew clean build`".  The software is defective, but the command `./gradlew clean build` succeeds!  Figure out why.  Hint: run "`./gradlew clean build; echo $?`" which prints the exit code of the *gradle* process.
 
-4. **Check out the commit with tag *v1.0.0* ** (`git checkout v1.0.0`), and compile and test the application again.  **All tests pass** on this revision.  If that is not the case, you have done something wrong.
+4. **Check out the commit with tag *v1.0.0*** (`git checkout v1.0.0`), and compile and test the application again.  **All tests pass** on this revision.  If that is not the case, you have done something wrong.
 
 5. **Determine** the
 **number of commits between tag v1.0.0 and HEAD** (the latest revision on main).
