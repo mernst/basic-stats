@@ -6,8 +6,8 @@ The goal of this exercise is to improve git proficiency and to learn about syste
 
 ## Setup
 1. Make sure
-a **[Java 17+ JDK](https://www.oracle.com/java/technologies/downloads/)**
-and **[Git](https://git-scm.com/) are installed**.
+a **[Java 17 or 21 JDK](https://www.oracle.com/java/technologies/downloads/)**
+and **[Git](https://git-scm.com/) is installed**.
 
 2. Not required, but strongly recommended:  [practice resolving a merge conflict](https://rawgit.com/mernst/git-conflict-tutorial/master/git-conflict-resolution.html).
 
@@ -30,16 +30,18 @@ single test run (they trusted the test command).
 
 ## Instructions
 
-3. **Checkout** the most recent commit on the *main* branch (`git checkout main`) and run: "`./gradlew clean build`".  The software is defective (meaning that running the tests should fail), but the command `./gradlew clean build` succeeds!  Figure out why.  Hint: run "`./gradlew clean build; echo $?`" which prints the exit code of the *gradle* process.
+3. **Checkout** the most recent commit on the *main* branch (`git checkout main`) and run: "`./gradlew clean build`".  Verify that the software is defective (meaning that running the tests should fail), but the command `./gradlew clean build` succeeds!
 
-4. **Check out the commit with tag *v1.0.0*** (`git checkout v1.0.0`), and compile and test the application again.  **All tests pass** on this revision.  If that is not the case, you have done something wrong.
+4. Figure out why the command `./gradlew clean build` succeeds, and **fix it**.  Hint: run "`./gradlew clean build; echo $?`" which prints the exit code of the *gradle* process.
 
-5. **Determine** the
+5. **Check out the commit with tag *v1.0.0*** (`git checkout v1.0.0`), and compile and test the application again.  **All tests pass** on this revision.  If that is not the case, you have done something wrong.
+
+6. **Determine** the
 **number of commits between tag v1.0.0 and HEAD** (the latest revision on main).
 Include v1.0.0 and HEAD when counting, and note the command(s) that you used to
 **automatically** compute this number.
 
-6. Familiarize yourself with the [git bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search) command.
+7. Familiarize yourself with the [git bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search) command.
 Use `git bisect` to identify the **commit that introduced the defect** between version **v1.0.0** and **HEAD**. (We strongly recommend that you automate `git bisect` with a script.)
 Note the commit hash and log message of the defect-inducing commit.
 **Verify** that you **correctly identified** the defect-inducing commit. 
@@ -47,7 +49,7 @@ Note the commit hash and log message of the defect-inducing commit.
 
 ## Questions
 
-1. Why does the described automated testing infrastructure not catch the test failure? How could you improve it?
+1. Why does the automated testing infrastructure (before your fix) not catch the test failure? How did you improve it?
 
 2. How many commits exist between version v1.0.0 and HEAD (including v1.0.0 and HEAD)? List the command(s) that you used to **automatically** compute this number.
 
