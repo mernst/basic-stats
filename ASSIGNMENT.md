@@ -41,10 +41,7 @@ single test run (they trusted the test command).
 Include v1.0.0 and HEAD when counting, and note the command(s) that you used to
 **automatically** compute this number.
 
-7. Familiarize yourself with the [git bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search) command.
-Use `git bisect` to identify the **commit that introduced the defect** between version **v1.0.0** and **HEAD**. (We strongly recommend that you automate `git bisect` with a script.)
-Note the commit hash and log message of the defect-inducing commit.
-**Verify** that you **correctly identified** the defect-inducing commit. 
+7. Familiarize yourself with the [git bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search) command. Use `git bisect` to identify the **commit that introduced the defect** between version **v1.0.0** and **HEAD**. Start by manually using `git bisect` to identify the **commit that introduced the defect** between version **v1.0.0** and **HEAD**. Then, automate the process using a script. Note the commit hash and log message of the defect-inducing commit. **Verify** that you **correctly identified** the defect-inducing commit.
 
 
 ## Questions
