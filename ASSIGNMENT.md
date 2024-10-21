@@ -32,7 +32,11 @@ single test run (they trusted the test command).
 
 3. **Checkout** the most recent commit on the *main* branch (`git checkout main`) and run: "`./gradlew clean build`".  Verify that the software is defective (meaning that running the tests should fail), but the command `./gradlew clean build` succeeds!
 
-4. Figure out why the command `./gradlew clean build` succeeds, and **fix it**.  Hint: run "`./gradlew clean build; echo $?`" which prints the exit code of the *gradle* process.
+4. Figure out why the command `./gradlew clean build` succeeds even though the
+tests fail, and **fix it**.  That is, ensure that `./gradlew clean build` fails
+(terminates with non-zero exit status) if and only if the tests fail.
+Hint 1: run "`./gradlew clean build; echo $?`" which prints the exit status of the *gradle* process.
+Hint 2: file `build.gradle` is the configuration file for the Gradle build system.
 
 5. **Check out the commit with tag *v1.0.0*** (`git checkout v1.0.0`), and compile and test the application again.  **All tests pass** on this revision.  If that is not the case, you have done something wrong.
 
@@ -41,7 +45,20 @@ single test run (they trusted the test command).
 Include v1.0.0 and HEAD when counting, and note the command(s) that you used to
 **automatically** compute this number.
 
-7. Familiarize yourself with the [git bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search) command. Use `git bisect` to identify the **commit that introduced the defect** between version **v1.0.0** and **HEAD**. Start by manually using `git bisect` to identify the **commit that introduced the defect** between version **v1.0.0** and **HEAD**. Then, automate the process using a script. Note the commit hash and log message of the defect-inducing commit. **Verify** that you **correctly identified** the defect-inducing commit.
+7. Learn about the [git
+bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search)
+command.
+
+8. Use `git bisect` to **manually** identify the **commit that introduced the
+defect** between version **v1.0.0** and **HEAD**.  When prompted by `git
+bisect`, you will run tests and then run `git bisect bad` or `git bisect good`,
+until `git bisect` tells you which commit introduced the defect.  Note the
+commit hash and log message of the defect-inducing commit.  **Verify** that you
+**correctly identified** the defect-inducing commit.  (Hint: what properties
+must be true about that commit?)
+
+9. Automate the process using a script, so that you only need to run `git bisect
+...` once and git will output the faulty commit.
 
 
 ## Questions
