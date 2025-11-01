@@ -31,7 +31,7 @@ public class Numbers implements Model {
   public void updateViews() {
 
     for (View view : observers) {
-      if (numbers.size() == 0) {
+      if (numbers.isEmpty()) {
         view.reset();
       } else {
         view.update(numbers);
@@ -41,7 +41,7 @@ public class Numbers implements Model {
 
   @Override
   public void update(ArrayList<Double> information) {
-    if (information.size() == 0) {
+    if (information.isEmpty()) {
       numbers = information;
     } else {
       numbers.addAll(information);
